@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-eliment.html</title>
+    <style>
+        h1::before {
+            content: 'hello ';
+            color: aqua;
+        }
+
+        h1::after {
+            content: ' gelo';
+            color: red;
+
+        }
+
+        .section-title {
+            display: inline-block;
+        }
+
+        .section-title::after,
+        .section-title:hover::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: crimson;
+        }
+
+        blockquote::before {
+            content: open-quote;
+            color: brown;
+            font-size: 1.5em;
+        }
+
+        blockquote::after {
+            content: close-quote;
+            color: brown;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo-eliment.html</h1>
+    <h1>Pseudo-eliment.html</h1>
+    <h2 class="section-title">Block quoat</h2>
+    <blockquote>Patience, persistence and perspiration make an unbeatable combination for success"</blockquote>
+
+    <blockquote>
+        Desire is the starting point of all achievement, not a hope, not a wish, but a keen pulsating desire which
+        transcends everything.
+
+    </blockquote>
+    <blockquote>Strength and growth come only through continuous effort and struggle…</blockquote>
+
+</body>
+
+</html>
